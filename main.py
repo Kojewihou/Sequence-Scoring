@@ -8,7 +8,6 @@ from utils import generate_random_sequence
 
 if __name__ == "__main__":
 
-    #testig stuff
     sequence_1 = generate_random_sequence(600)
     sequence_2 = generate_random_sequence(600)
 

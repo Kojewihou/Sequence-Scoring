@@ -3,8 +3,18 @@
 from matrices import blosum62
 
 def pairwise_score(sequence1, sequence2):
+    """Score adjacent residues between two given sequences.
+
+    Args:
+        sequence1 (string): primary sequence
+        sequence2 (string): secondary sequence
+
+    Returns:
+        int: comparison score between matrices
+    """
     score = 0
     gap_adjacent = False
+    
     for i in range(len(min([sequence1,sequence2],key=len))):
         residueA = sequence1[i]
         residueB = sequence2[i]
