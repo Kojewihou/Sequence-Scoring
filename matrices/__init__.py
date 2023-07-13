@@ -1,0 +1,1 @@
+from .blosum62 import blosum62
